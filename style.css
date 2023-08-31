@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.main__content {
+    display: inline-block;
+}
+
+.main__content--notes {
+    margin: 10px 0 10px 30px;
+}
+
+.main__content--image2 {
+    visibility: visible;
+    position: static;
+    margin: 0;
+}
+
+.main__content--image {
+    visibility: hidden;
+    position: fixed;
+}
+
+.main__content--update {
+    font-weight: 700;
+    font-size: 35px;
+    color: hsl(234, 29%, 20%);
+}
+
+.main__content--note {
+    padding: 15px 0;
+    font-size: 1rem;
+    line-height: 25px;
+    font-weight: 500;
+    color: hsl(234, 29%, 20%);
+}
+
+.container {
+    padding: 10px 0;
+    font-size: 1rem;
+    color: hsl(234, 29%, 20%);
+    display: inline-block;
+}
+
+.round {
+    padding: 4px 0;
+}
+
+.checkbox__field {
+    margin-right: 5px;
+}
+
+.mail{
+    font-weight: 600;
+}
+
+.Email {
+    width: 300px;
+    margin: 10px 0;
+    padding: 8px 25px;
+    height: 50px;
+    border-style: none;
+    border: 1px solid  hsl(231, 7%, 60%);
+    border-radius: 12px;
+    color: hsl(231, 7%, 60%);
+    cursor: pointer;
+}
+
+button {
+    width: 300px;
+    height: 45px;
+    margin-top: 8px;
+    border-radius: 10px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: hsl(4, 100%, 67%);
+    transition: all 0.2s ease-out;
+    }
+
+@media (min-width: 376px) {
+    .main__content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main__content--image2 {
+        visibility: hidden;
+        position: fixed;
+    }
+
+    .main__content--image {
+        visibility: visible;
+        position: static;
+        margin: 10px 50px;
+    }
+
+    .main__content--notes {
+        margin: 0 0 0 60px;
+    }
+    
+    .main__content--update {
+        font-weight: bold;
+        font-size: 50px;
+        color: hsl(234, 29%, 20%);
+    }
+
+    .main__content--note {
+        color: hsl(235, 18%, 26%);
+        font-size: 1rem;
+    }
+    
+    .round {
+        padding: 6px 0;
+        color: hsl(235, 18%, 26%);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .checkbox__field {
+        margin-right: 10px;
+    }
+    
+    .mail{
+        font-weight: 700;
+    }
+    
+    .Email {
+        margin: 10px 0;
+        padding: 8px 25px;
+        width: 345px;
+        height: 50px;
+        border-style: none;
+        border: 1px solid  hsl(231, 7%, 60%);
+        border-radius: 12px;
+        color: hsl(231, 7%, 60%);
+        cursor: pointer;
+    }
+
+    button {
+        height: 45px;
+        width: 345px;
+        margin-top: 8px;
+        border-radius: 10px;
+        background-color: hsl(234, 29%, 20%);
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+    }
+    
+    button:hover,
+    button:active {
+        background-color: hsl(4, 100%, 67%);
+        transition: all 0.3s ease-in ease-in;
+    }
+    
+}
