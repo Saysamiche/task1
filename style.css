@@ -12,17 +12,16 @@ body {
 }
 
 .main__content {
-    display: inline-block;
+    width: 100%;
 }
 
-.main__content--notes {
-    margin: 10px 0 10px 30px;
+ .main__content--notes {
+   margin: 10px 0 10px 30px;
 }
 
 .main__content--image2 {
     visibility: visible;
     position: static;
-    margin: 0;
 }
 
 .main__content--image {
@@ -45,18 +44,67 @@ body {
 }
 
 .container {
-    padding: 10px 0;
     font-size: 1rem;
     color: hsl(234, 29%, 20%);
-    display: inline-block;
+    display: flex;
+    vertical-align: middle;
+    padding: 20px 0;
+    font-size: 0.9rem;
 }
 
-.round {
-    padding: 4px 0;
+.round-one {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: hsl(4, 100%, 67%);
+    vertical-align: middle;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
 }
 
-.checkbox__field {
-    margin-right: 5px;
+.round-two {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: hsl(4, 100%, 67%);
+    vertical-align: middle;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+}
+
+.round-three {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: hsl(4, 100%, 67%);
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+}
+
+.container-round {
+    vertical-align: middle;
+}
+
+.container-paragraph {
+    vertical-align: middle;
+    padding-left: 14px;
+}
+
+.container-product {
+    padding-bottom: 33px;
+}
+
+.container-measure {
+    padding-bottom: 32px;
+
+}
+
+.container-more {
+    padding-bottom: 8px;
+    vertical-align: middle;
 }
 
 .mail{
@@ -88,9 +136,16 @@ button {
 button:active {
     background-color: hsl(4, 100%, 67%);
     transition: all 0.2s ease-out;
+}
+
+@media (min-width: 761px) {
+    body {
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        width: 100%;
+        height: 100vh;
     }
 
-@media (min-width: 376px) {
     .main__content {
         display: flex;
         flex-direction: row;
@@ -113,6 +168,8 @@ button:active {
 
     .main__content--notes {
         margin: 0 0 0 60px;
+        display: inline-block;
+        width: 100%;
     }
     
     .main__content--update {
@@ -125,36 +182,94 @@ button:active {
         color: hsl(235, 18%, 26%);
         font-size: 1rem;
     }
+
     
-    .round {
-        padding: 6px 0;
-        color: hsl(235, 18%, 26%);
+    .container {
         font-size: 1rem;
-        font-weight: 400;
+        color: hsl(234, 29%, 20%);
+        display: flex;
+        padding: 10px 0;
+        width: 100%;
     }
 
-    .checkbox__field {
-        margin-right: 10px;
+    .round-one {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: hsl(4, 100%, 67%);
+        vertical-align: middle;
+        margin-bottom: 35px;
+        text-align: center;
+        color: white;
+    }
+    
+    .round-two {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: hsl(4, 100%, 67%);
+        vertical-align: middle;
+        margin-bottom: 35px;
+        text-align: center;
+        color: white;
+    }
+    
+    .round-three {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: hsl(4, 100%, 67%);
+        vertical-align: middle;
+        text-align: center;
+        color: white;
+    }
+
+    .container-round {
+        width: 5%;
+    }
+
+    .container-paragraph {
+        vertical-align: top;
+        padding-left: 14px;
+        width: 85%;
+        padding-bottom: 15px;
+    }
+
+    .container-product {
+        margin-bottom: 4px;
+        padding-bottom: 13px;
+    }
+
+    .container-measure {
+        margin-bottom: 10px;
+        padding-bottom: 13px;
+    }
+
+    .container-more {
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
     
     .mail{
         font-weight: 700;
+        padding-bottom: 30px;
     }
     
     .Email {
         margin: 10px 0;
         padding: 8px 25px;
         width: 345px;
-        height: 50px;
+        height: 55px;
         border-style: none;
         border: 1px solid  hsl(231, 7%, 60%);
         border-radius: 12px;
         color: hsl(231, 7%, 60%);
         cursor: pointer;
+        font-size: 17px;
     }
 
     button {
-        height: 45px;
+        height: 50px;
         width: 345px;
         margin-top: 8px;
         border-radius: 10px;
@@ -167,6 +282,74 @@ button:active {
     button:active {
         background-color: hsl(4, 100%, 67%);
         transition: all 0.3s ease-in ease-in;
+    }   
+}    
+
+@media (min-width: 970px) {
+    .container {
+        font-size: 1rem;
+        color: hsl(234, 29%, 20%);
+        display: flex;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .round-one {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: hsl(4, 100%, 67%);
+        vertical-align: middle;
+        margin-bottom: 15px;
+        text-align: center;
+        color: white;
+    }
+    
+    .round-two {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: hsl(4, 100%, 67%);
+        vertical-align: middle;
+        margin-bottom: 15px;
+        text-align: center;
+        color: white;
+    }
+    
+    .round-three {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: hsl(4, 100%, 67%);
+        vertical-align: middle;
+        text-align: center;
+        color: white;
+    }
+
+    .container-round {
+        width: 5%;
+    }
+
+    .container-paragraph {
+        vertical-align: top;
+        padding-left: 14px;
+        width: 85%;
+        padding-bottom: 15px;
+    }
+
+    .container-product {
+        margin-bottom: 4px;
+        padding-bottom: 13px;
+    }
+
+    .container-measure {
+        margin-bottom: 5px;
+        padding-bottom: 13px;
+    }
+
+    .container-more {
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
     
 }
