@@ -86,7 +86,6 @@ body {
 
 .check-center {
     text-align: center;
-    color: blue;
     font-size: 12px;
 }
 
@@ -232,8 +231,9 @@ button:active {
 
     .check-center {
         text-align: center;
+        font-size: 12px;
     }
-
+    
     .container-round {
         width: 5%;
     }
@@ -332,7 +332,9 @@ button:active {
 
     .check-center {
         text-align: center;
+        font-size: 12px;
     }
+    
 
     .container-round {
         width: 5%;
