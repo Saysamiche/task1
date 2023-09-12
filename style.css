@@ -86,6 +86,8 @@ body {
 
 .check-center {
     text-align: center;
+    color: blue;
+    font-size: 12px;
 }
 
 .container-round {
