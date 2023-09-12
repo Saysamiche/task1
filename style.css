@@ -301,8 +301,6 @@ button:active {
         background-color: hsl(4, 100%, 67%);
         vertical-align: middle;
         margin-bottom: 15px;
-        text-align: center;
-        color: white;
     }
     
     .round-two {
@@ -312,8 +310,6 @@ button:active {
         background-color: hsl(4, 100%, 67%);
         vertical-align: middle;
         margin-bottom: 15px;
-        text-align: center;
-        color: white;
     }
     
     .round-three {
@@ -322,8 +318,6 @@ button:active {
         border-radius: 50%;
         background-color: hsl(4, 100%, 67%);
         vertical-align: middle;
-        text-align: center;
-        color: white;
     }
 
     .container-round {
